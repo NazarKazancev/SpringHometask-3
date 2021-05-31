@@ -1,6 +1,5 @@
 package com.example.hometask;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
@@ -14,7 +13,6 @@ public class ConfigEventPublisher {
 
     public void publishCustomEvent(final SimpleConfig simpleConfig) {
         System.out.println("Publishing custom event. ");
-
         ConfigEvent configEvent = new ConfigEvent(this, simpleConfig);
         applicationEventPublisher.publishEvent(configEvent);
     }

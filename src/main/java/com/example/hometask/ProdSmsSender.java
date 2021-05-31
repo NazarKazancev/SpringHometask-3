@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
 public class ProdSmsSender implements SmsSender {
     @Override
     public void send(String phoneNumber, String text) {
-
+        System.out.println("PROD: Sending "+ text + " \nTO " + phoneNumber);
     }
 }

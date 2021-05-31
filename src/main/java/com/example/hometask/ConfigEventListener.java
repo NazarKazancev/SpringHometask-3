@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ConfigEventListener implements ApplicationListener<ConfigEvent> {
+
     @Override
     public void onApplicationEvent(ConfigEvent event) {
         System.out.println(event.getSimpleConfig().getFirstConfig());

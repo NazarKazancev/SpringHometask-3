@@ -1,10 +1,10 @@
 package com.example.hometask;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.context.ApplicationEvent;
 
 public class ConfigEvent extends ApplicationEvent {
-    private static SimpleConfig simpleConfig;
+    private SimpleConfig simpleConfig;
     /**
      * Create a new {@code ApplicationEvent}.
      *
