@@ -1,0 +1,6 @@
+app:
+  first-config: 2
+  second-config:
+    subconfig: sadsafsadf
+    user: flames
+    ttl: SECRET
